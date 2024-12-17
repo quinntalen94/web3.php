@@ -11,53 +11,53 @@ class TestCase extends BaseTestCase
 {
     /**
      * web3
-     * 
+     *
      * @var \Web3\Web3
      */
     protected $web3;
 
     /**
      * testHost2
-     * 
+     *
      * @var string
      */
     protected $testHost2 = 'https://eth-mainnet.g.alchemy.com/v2/notavalidkey';
 
     /**
      * testHost
-     * 
+     *
      * @var string
      */
     protected $testHost = 'http://localhost:8545';
 
     /**
      * testWsHost
-     * 
+     *
      * @var string
      */
     protected $testWsHost = 'ws://localhost:8545';
 
     /**
      * coinbase
-     * 
+     *
      * @var string
      */
     protected $coinbase;
 
     /**
      * asyncHttpProvider
-     * 
+     *
      * @var \Web3\Providers\HttpAsyncProvider
      */
     protected $asyncHttpProvider;
 
     /**
      * EMPTY_ADDRESS
-     * 
+     *
      * @var string
      */
     protected $EMPTY_ADDRESS = '0x0000000000000000000000000000000000000000';
-    
+
     /**
      * loadFixtureJsonFile
      */

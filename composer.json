@@ -1,19 +1,19 @@
 {
-    "name": "web3p/web3.php",
+    "name": "quinn/web3.php",
     "description": "Ethereum web3 interface.",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "sc0Vu",
-            "email": "alk03073135@gmail.com"
+            "name": "quinn",
+            "email": "quinntalen94@gmail.com"
         }
     ],
     "require": {
-        "guzzlehttp/guzzle": "^6.3|^7.0",
+        "guzzlehttp/guzzle": "^6.3|~7.0",
         "PHP": "^7.2|^8.0",
         "kornrunner/keccak": "~1.0",
-        "phpseclib/phpseclib": "~2.0.30",
+        "phpseclib/phpseclib": "~3.0",
         "ext-mbstring": "*",
         "react/http": "^1.6.0",
         "react/async": "^4.0.0|^3.1.0",

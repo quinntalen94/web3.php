@@ -5,20 +5,20 @@ namespace Test\Unit;
 use RuntimeException;
 use InvalidArgumentException;
 use Test\TestCase;
-use phpseclib\Math\BigInteger as BigNumber;
+use phpseclib3\Math\BigInteger as BigNumber;
 
 class EthApiTest extends TestCase
 {
     /**
      * eth
-     * 
+     *
      * @var \Web3\Eth
      */
     protected $eth;
 
     /**
      * setUp
-     * 
+     *
      * @return void
      */
     public function setUp(): void
@@ -30,9 +30,9 @@ class EthApiTest extends TestCase
 
     /**
      * testProtocolVersion
-     * 
+     *
      * @return void
-     */    
+     */
     public function testProtocolVersion()
     {
         $eth = $this->eth;
@@ -47,9 +47,9 @@ class EthApiTest extends TestCase
 
     /**
      * testSyncing
-     * 
+     *
      * @return void
-     */    
+     */
     public function testSyncing()
     {
         $eth = $this->eth;
@@ -65,9 +65,9 @@ class EthApiTest extends TestCase
 
     /**
      * testCoinbase
-     * 
+     *
      * @return void
-     */    
+     */
     public function testCoinbase()
     {
         $eth = $this->eth;
@@ -82,9 +82,9 @@ class EthApiTest extends TestCase
 
     /**
      * testMining
-     * 
+     *
      * @return void
-     */    
+     */
     public function testMining()
     {
         $eth = $this->eth;
@@ -99,9 +99,9 @@ class EthApiTest extends TestCase
 
     /**
      * testHashrate
-     * 
+     *
      * @return void
-     */    
+     */
     public function testHashrate()
     {
         $eth = $this->eth;
@@ -116,9 +116,9 @@ class EthApiTest extends TestCase
 
     /**
      * testGasPrice
-     * 
+     *
      * @return void
-     */    
+     */
     public function testGasPrice()
     {
         $eth = $this->eth;
@@ -133,9 +133,9 @@ class EthApiTest extends TestCase
 
     /**
      * testAccounts
-     * 
+     *
      * @return void
-     */    
+     */
     public function testAccounts()
     {
         $eth = $this->eth;
@@ -150,9 +150,9 @@ class EthApiTest extends TestCase
 
     /**
      * testBlockNumber
-     * 
+     *
      * @return void
-     */    
+     */
     public function testBlockNumber()
     {
         $eth = $this->eth;
@@ -167,9 +167,9 @@ class EthApiTest extends TestCase
 
     /**
      * testGetBalance
-     * 
+     *
      * @return void
-     */    
+     */
     public function testGetBalance()
     {
         $eth = $this->eth;
@@ -184,9 +184,9 @@ class EthApiTest extends TestCase
 
     /**
      * testGetStorageAt
-     * 
+     *
      * @return void
-     */    
+     */
     public function testGetStorageAt()
     {
         $eth = $this->eth;
@@ -201,9 +201,9 @@ class EthApiTest extends TestCase
 
     /**
      * testGetTransactionCount
-     * 
+     *
      * @return void
-     */    
+     */
     public function testGetTransactionCount()
     {
         $eth = $this->eth;
@@ -218,9 +218,9 @@ class EthApiTest extends TestCase
 
     /**
      * testGetBlockTransactionCountByHash
-     * 
+     *
      * @return void
-     */    
+     */
     public function testGetBlockTransactionCountByHash()
     {
         $eth = $this->eth;
@@ -235,9 +235,9 @@ class EthApiTest extends TestCase
 
     /**
      * testGetBlockTransactionCountByNumber
-     * 
+     *
      * @return void
-     */    
+     */
     public function testGetBlockTransactionCountByNumber()
     {
         $eth = $this->eth;
@@ -252,9 +252,9 @@ class EthApiTest extends TestCase
 
     /**
      * testGetUncleCountByBlockHash
-     * 
+     *
      * @return void
-     */    
+     */
     public function testGetUncleCountByBlockHash()
     {
         $eth = $this->eth;
@@ -269,9 +269,9 @@ class EthApiTest extends TestCase
 
     /**
      * testGetUncleCountByBlockNumber
-     * 
+     *
      * @return void
-     */    
+     */
     public function testGetUncleCountByBlockNumber()
     {
         $eth = $this->eth;
@@ -286,9 +286,9 @@ class EthApiTest extends TestCase
 
     /**
      * testGetCode
-     * 
+     *
      * @return void
-     */    
+     */
     public function testGetCode()
     {
         $eth = $this->eth;
@@ -303,9 +303,9 @@ class EthApiTest extends TestCase
 
     /**
      * testSign
-     * 
+     *
      * @return void
-     */    
+     */
     public function testSign()
     {
         $eth = $this->eth;
@@ -320,9 +320,9 @@ class EthApiTest extends TestCase
 
     /**
      * testSendTransaction
-     * 
+     *
      * @return void
-     */    
+     */
     public function testSendTransaction()
     {
         $eth = $this->eth;
@@ -344,9 +344,9 @@ class EthApiTest extends TestCase
 
     /**
      * testSendRawTransaction
-     * 
+     *
      * @return void
-     */    
+     */
     public function testSendRawTransaction()
     {
         $eth = $this->eth;
@@ -361,9 +361,9 @@ class EthApiTest extends TestCase
 
     /**
      * testCall
-     * 
+     *
      * @return void
-     */    
+     */
     public function testCall()
     {
         $eth = $this->eth;
@@ -385,9 +385,9 @@ class EthApiTest extends TestCase
 
     /**
      * testEstimateGas
-     * 
+     *
      * @return void
-     */    
+     */
     public function testEstimateGas()
     {
         $eth = $this->eth;
@@ -409,9 +409,9 @@ class EthApiTest extends TestCase
 
     /**
      * testGetBlockByHash
-     * 
+     *
      * @return void
-     */    
+     */
     public function testGetBlockByHash()
     {
         $eth = $this->eth;
@@ -426,9 +426,9 @@ class EthApiTest extends TestCase
 
     /**
      * testGetBlockByNumber
-     * 
+     *
      * @return void
-     */    
+     */
     public function testGetBlockByNumber()
     {
         $eth = $this->eth;
@@ -444,9 +444,9 @@ class EthApiTest extends TestCase
 
     /**
      * testGetTransactionByHash
-     * 
+     *
      * @return void
-     */    
+     */
     public function testGetTransactionByHash()
     {
         $eth = $this->eth;
@@ -461,9 +461,9 @@ class EthApiTest extends TestCase
 
     /**
      * testGetTransactionByBlockHashAndIndex
-     * 
+     *
      * @return void
-     */    
+     */
     public function testGetTransactionByBlockHashAndIndex()
     {
         $eth = $this->eth;
@@ -478,9 +478,9 @@ class EthApiTest extends TestCase
 
     /**
      * testGetTransactionByBlockNumberAndIndex
-     * 
+     *
      * @return void
-     */    
+     */
     public function testGetTransactionByBlockNumberAndIndex()
     {
         $eth = $this->eth;
@@ -495,9 +495,9 @@ class EthApiTest extends TestCase
 
     /**
      * testGetTransactionReceipt
-     * 
+     *
      * @return void
-     */    
+     */
     public function testGetTransactionReceipt()
     {
         $eth = $this->eth;
@@ -512,9 +512,9 @@ class EthApiTest extends TestCase
 
     /**
      * testGetUncleByBlockHashAndIndex
-     * 
+     *
      * @return void
-     */    
+     */
     public function testGetUncleByBlockHashAndIndex()
     {
         $eth = $this->eth;
@@ -529,9 +529,9 @@ class EthApiTest extends TestCase
 
     /**
      * testGetUncleByBlockNumberAndIndex
-     * 
+     *
      * @return void
-     */    
+     */
     public function testGetUncleByBlockNumberAndIndex()
     {
         $eth = $this->eth;
@@ -546,9 +546,9 @@ class EthApiTest extends TestCase
 
     /**
      * testNewFilter
-     * 
+     *
      * @return void
-     */    
+     */
     public function testNewFilter()
     {
         $eth = $this->eth;
@@ -569,9 +569,9 @@ class EthApiTest extends TestCase
 
     /**
      * testNewBlockFilter
-     * 
+     *
      * @return void
-     */    
+     */
     public function testNewBlockFilter()
     {
         $eth = $this->eth;
@@ -587,9 +587,9 @@ class EthApiTest extends TestCase
 
     /**
      * testNewPendingTransactionFilter
-     * 
+     *
      * @return void
-     */    
+     */
     public function testNewPendingTransactionFilter()
     {
         $eth = $this->eth;
@@ -605,9 +605,9 @@ class EthApiTest extends TestCase
 
     /**
      * testUninstallFilter
-     * 
+     *
      * @return void
-     */    
+     */
     public function testUninstallFilter()
     {
         $eth = $this->eth;
@@ -623,9 +623,9 @@ class EthApiTest extends TestCase
 
     /**
      * testGetFilterChanges
-     * 
+     *
      * @return void
-     */    
+     */
     public function testGetFilterChanges()
     {
         $eth = $this->eth;
@@ -640,9 +640,9 @@ class EthApiTest extends TestCase
 
     /**
      * testGetFilterLogs
-     * 
+     *
      * @return void
-     */    
+     */
     public function testGetFilterLogs()
     {
         $eth = $this->eth;
@@ -657,9 +657,9 @@ class EthApiTest extends TestCase
 
     /**
      * testGetLogs
-     * 
+     *
      * @return void
-     */    
+     */
     public function testGetLogs()
     {
         $eth = $this->eth;
@@ -679,9 +679,9 @@ class EthApiTest extends TestCase
 
     /**
      * testSubmitWork
-     * 
+     *
      * @return void
-     */    
+     */
     public function testSubmitWork()
     {
         $eth = $this->eth;
@@ -700,9 +700,9 @@ class EthApiTest extends TestCase
 
     /**
      * testSubmitHashrate
-     * 
+     *
      * @return void
-     */    
+     */
     public function testSubmitHashrate()
     {
         $eth = $this->eth;
@@ -720,9 +720,9 @@ class EthApiTest extends TestCase
 
     /**
      * testFeeHistory
-     * 
+     *
      * @return void
-     */    
+     */
     public function testFeeHistory()
     {
         $eth = $this->eth;
@@ -743,9 +743,9 @@ class EthApiTest extends TestCase
 
     /**
      * testGetBlockByNumberAsync
-     * 
+     *
      * @return void
-     */    
+     */
     public function testGetBlockByNumberAsync()
     {
         $eth = $this->eth;
@@ -765,7 +765,7 @@ class EthApiTest extends TestCase
 
     /**
      * testUnallowedMethod
-     * 
+     *
      * @return void
      */
     public function testUnallowedMethod()
@@ -784,7 +784,7 @@ class EthApiTest extends TestCase
 
     /**
      * testWrongCallback
-     * 
+     *
      * @return void
      */
     public function testWrongCallback()
