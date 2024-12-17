@@ -1,11 +1,11 @@
 {
-    "name": "quinn/web3.php",
+    "name": "quinntalen/web3.php",
     "description": "Ethereum web3 interface.",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "quinn",
+            "name": "quinntalen",
             "email": "quinntalen94@gmail.com"
         }
     ],
